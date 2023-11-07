@@ -33,6 +33,10 @@ font-family: 'Roboto Serif', serif;
     justify-content: space-between;
     margin-right: 5vh;
 }
+.midiasSociais2{
+    display: none;
+    margin-right: 5vh;
+}
 .bemVindo{
     background-image: url(Assets/festa.png);
    background-repeat: no-repeat;
@@ -105,7 +109,8 @@ font-family: 'Roboto Serif', serif;
     background-image :url(Assets/pincher.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
-   height: 100vh;
+    height: 100vh;
+    padding-right: 3vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -131,6 +136,9 @@ font-family: 'Roboto Serif', serif;
     border: none;
     margin-top: 3vh;
 }
+footer h4{
+    display: none;
+}
 .apoio{
     width: 100%;
     height: 10vh;
@@ -140,7 +148,7 @@ font-family: 'Roboto Serif', serif;
     align-items: center;
     color:#FD6A9A;
     font-family: 'Roboto Serif', serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .apoio img {
     height: 5vh;
@@ -163,4 +171,104 @@ font-family: 'Roboto Serif', serif;
 }
 .informacoes li{
     list-style-type: none;
+}
+.midiasSociaisMini{
+    display: none;
+}
+.fantastika{ display: none;}
+
+@media(min-width:220px) and (max-width: 500px){
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        z-index: 999;
+        font-size: 1.5vh;
+        
+    }
+    .midiasSociais{display: none;}
+    .midiasSociais2{
+        display: initial;
+    }
+    .bemVindo{
+        background-image: url(Assets/festaMobile.png);
+        background-size:100% 100%;
+        height: 110vh;
+        font-size: 1.5rem;
+    }
+    .banho{
+        background-image: url(Assets/leaoMobile.png);
+        background-size:100% 100%;
+        height: 100vh;
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        padding-top: 5vh;
+    }
+    .banhoAlign{
+        width: 80%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .banho h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .banho p{
+        font-size: 1rem;
+    }
+    .saude{
+        background-image: url(Assets/pincherMobile.png);
+        background-size:100% 100%;
+        height: 100vh;
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        padding-top: 5vh;
+        padding-left: 3vh;
+    }
+    .saudeAlign{
+        width: 80%;
+
+        text-align: left;
+        align-items: flex-start;
+    }
+    .saude h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .saude p{
+        font-size: 1rem;
+    }
+    .apoio h3{
+        display: none;
+    }
+    footer h4{
+        display: initial;
+        background-color: whitesmoke;
+        display: flex;
+        font-size: 1.1rem;
+        color:#FD6A9A ;
+        justify-content: space-around;
+    }
+    .apoio img{
+        height: 2vh;
+    }
+    .informacoes{
+        height: auto;
+        flex-direction:column ;
+        
+        text-align: center;
+        padding-bottom: 6vh;
+    }
+    .informacoes h3{ margin-top: 3vh;}
+    .fantastika{
+        height: 8vh;
+        margin-top: 3vh;
+    }
+    .midiasSociaisMini{
+        margin-top: 4vh;
+        display: initial;
+    }
 }
