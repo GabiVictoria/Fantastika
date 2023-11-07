@@ -59,6 +59,12 @@ font-family: 'Roboto Serif', serif;
     position: relative;
     bottom: 10vh;
 }
+.banhoAlign{
+    width: 40%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
 .banho{
     background-image:url(Assets/leao.png) ;
     background-repeat: no-repeat;
@@ -66,20 +72,16 @@ font-family: 'Roboto Serif', serif;
     height: 100vh;
     padding-left: 3vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content:flex-start;
+    align-items: center;
     font-family: 'Roboto Serif', serif;
     text-align: center;
-
 }
 .banho h2 {
-    width: 50%;
     font-size: 2.5rem;
     font-weight: bold;
 }
 .banho p{
-    width: 50%;
     font-size: 1.5rem;
 }
 .fale-conosco {
@@ -91,28 +93,31 @@ font-family: 'Roboto Serif', serif;
     font-size: 1rem;
     font-weight: bold;
     border: none;
+    margin-top: 3vh;
+}
+.saudeAlign{
+    width: 40%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
 }
 .saude{
     background-image :url(Assets/pincher.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
    height: 100vh;
-   padding-right: 3vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
     font-family: 'Roboto Serif', serif;
     text-align: center;
     color: whitesmoke;
 }
 .saude h2 {
-    width: 50%;
     font-size: 2.5rem;
     font-weight: bold;
 }
-.saude p{
-    width: 50%;
+.saude p {
     font-size: 1.5rem;
 }
 .fale-conosco2 {
@@ -124,25 +129,38 @@ font-family: 'Roboto Serif', serif;
     font-size: 1rem;
     font-weight: bold;
     border: none;
+    margin-top: 3vh;
 }
 .apoio{
+    width: 100%;
     height: 10vh;
-display: flex;
-background-color: whitesmoke;
-justify-content: space-around;
-align-items: center;
-padding-left: 25vh;
-color:#FD6A9A;
-font-family: 'Roboto Serif', serif;
-  font-size: 1.2rem;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#FD6A9A;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.2rem;
 }
+.apoio img {
+    height: 5vh;
+}
+
 .informacoes{
     height: 35vh;
     display: flex;
     background-color: #EB4A7B;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     color:whitesmoke;
     font-family: 'Roboto Serif', serif;
       font-size: 1.2rem;
+      
+}
+.informacoes h3 {
+    font-size: 1.8rem;
+    margin-bottom: 3vh;
+}
+.informacoes li{
+    list-style-type: none;
 }
